@@ -1,0 +1,18 @@
+.ShareBtn{
+    height: 50px;
+    width: 50px;
+    font-size: 36px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    display: flex;
+    place-items: center;
+    justify-items: center;
+    background-color: #7014F2;
+    color: white;
+    cursor: pointer;
+}
+
+.ShareBtn:active{
+    filter: brightness(0.8);
+}

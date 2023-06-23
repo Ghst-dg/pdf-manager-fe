@@ -1,0 +1,46 @@
+.Dashboard{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url('https://images.pexels.com/photos/2739013/pexels-photo-2739013.jpeg');
+    animation: bg-changer 48s infinite;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+@keyframes bg-changer{
+    0%{
+        background-image: url('https://images.pexels.com/photos/2739013/pexels-photo-2739013.jpeg');
+    }
+
+    20%{
+        background-image: url('https://images.pexels.com/photos/547114/pexels-photo-547114.jpeg');
+    }
+
+    40%{
+        background-image: url('https://images.pexels.com/photos/707915/pexels-photo-707915.jpeg');
+    }
+
+    60%{
+        background-image: url('https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg');
+    }
+
+    80%{
+        background-image: url('https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg');
+    }
+
+    100%{
+        background-image: url('https://images.pexels.com/photos/2739013/pexels-photo-2739013.jpeg');
+    }
+}
+
+.DashboardMask{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}

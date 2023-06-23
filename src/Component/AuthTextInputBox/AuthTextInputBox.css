@@ -1,0 +1,10 @@
+.AuthTextInputBox{
+    border: 3px solid #000000;
+    font-size: 36px;
+    width: 80%;
+    text-align: center;
+    border-radius: 36px;
+    opacity: 0;
+    animation: showText 0.5s ease-in-out both;
+    padding: 1%;
+}

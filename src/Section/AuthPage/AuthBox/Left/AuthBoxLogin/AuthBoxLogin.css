@@ -1,0 +1,7 @@
+.ErrorMessage{
+    display: block;
+    width: 100%;
+    color: red;
+    font-size: 28px;
+    text-align: center;
+}

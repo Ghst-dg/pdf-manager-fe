@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+button{
+    font-family: 'Raleway', sans-serif;
+}
+
+input{
+    font-family: 'Raleway', sans-serif;
+}
+
+@keyframes showText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

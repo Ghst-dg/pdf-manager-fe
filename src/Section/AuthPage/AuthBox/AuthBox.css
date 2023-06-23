@@ -1,0 +1,9 @@
+.AuthBox{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}

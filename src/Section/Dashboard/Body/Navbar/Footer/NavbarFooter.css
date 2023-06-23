@@ -1,0 +1,74 @@
+.NavbarFooter{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.NavbarAdditionBox{
+    width: 90%;
+    height: 70%;
+    border-radius: 8px 32px 16px 24px;
+    background-color: #F2CC8F;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    place-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid #000000;
+}
+
+.TotalAddent{
+    display: block;
+    height: 30%;
+    width: 90%;
+    font-size: 48px;
+    text-align: right;
+    opacity: 0;
+    animation: showText 0.5s ease-in-out both;
+    transition: all 0.5s ease-in-out;
+}
+
+.TotalLine{
+    width: 80%;
+    border-color: #000000;
+    opacity: 0;
+    animation: showText 0.5s ease-in-out both;
+}
+
+.SuccessText{
+    display: block;
+    height: 30%;
+    width: 90%;
+    font-size: 36px;
+    text-align: center;
+    color: #087e8b;
+    opacity: 0;
+    animation: showText 0.5s ease-in-out both;
+}
+
+.ErrorText{
+    display: block;
+    height: 30%;
+    width: 90%;
+    font-size: 36px;
+    text-align: center;
+    color: #ff5a5f;
+    opacity: 0;
+    animation: showText 0.5s ease-in-out both;
+}
+
+.ValueTitleText{
+    display: block;
+    height: 30%;
+    width: 90%;
+    font-size: 32px;
+    text-align: right;
+    opacity: 0;
+    animation: showText 0.5s ease-in-out both;
+    transition: all 0.5s ease;
+}

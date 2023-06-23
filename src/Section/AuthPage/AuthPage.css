@@ -1,0 +1,38 @@
+.AuthPage{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-direction: row;
+    background-image: url('https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: changer 32s infinite;
+}
+
+@keyframes changer{
+    0%{
+        background-image: url('https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg');
+    }
+
+    25%{
+        background-image: url('https://images.pexels.com/photos/355829/pexels-photo-355829.jpeg');
+    }
+
+    50%{
+        background-image: url('https://images.pexels.com/photos/1028203/pexels-photo-1028203.jpeg');
+    }
+
+    75%{
+        background-image: url('https://images.pexels.com/photos/1647962/pexels-photo-1647962.jpeg');
+    }
+
+    100%{
+        background-image: url('https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg');
+    }
+}

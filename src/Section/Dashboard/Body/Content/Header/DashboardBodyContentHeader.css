@@ -1,0 +1,70 @@
+.DashboardBodyContentHeader{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.UploaderContainer{
+    width: 50%;
+    height: 90%;
+    border-radius: 16px 32px 64px 48px;
+    background-color: #3D405B;
+}
+
+.uploader::-webkit-file-upload-button{
+    visibility: hidden;
+}
+
+.uploader::before{
+    content: 'Upload';
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.uploader{
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    font-family: Raleway;
+}
+
+.DashboardBodyContentHeaderContainer{
+    width: 20%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 48px;
+    opacity: 0;
+    animation: showText 0.5s ease-in-out both;
+    border: 2px solid black;
+}
+
+.DashboardBodyContentHeaderContainerText{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 48px;
+    opacity: 0;
+    animation: showText 0.5s ease-in-out both;
+}

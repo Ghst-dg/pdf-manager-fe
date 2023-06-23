@@ -1,0 +1,48 @@
+.AuthBoxRight{
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    border: 5px solid #ffffff;
+    border-radius: 0px 32px 32px 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.AuthBoxRightHeader{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.AuthBoxRightTitle{
+    display: inline-flex;
+    text-align: center;
+    place-items: center;
+    color: #ffffff;
+    font-size: 24px;
+    padding-left: 5%;
+}
+
+.AuthBoxRightTitleNavLinks{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 100%;
+}
+
+.AuthBoxRightTitleLinks{
+    color: #ffffff;
+    font-size: 24px;
+    padding: 1%;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+.AuthBoxRightTitleLinks:hover{
+    
+}

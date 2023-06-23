@@ -1,0 +1,16 @@
+.AuthButton{
+    width: 50%;
+    font-size: 36px;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    animation: showText 0.5s ease-in-out both;
+}
+
+.AuthButton:active{
+    filter: brightness(0.8);
+}

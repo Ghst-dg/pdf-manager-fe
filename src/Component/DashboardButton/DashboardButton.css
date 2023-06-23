@@ -1,0 +1,12 @@
+.DashboardButton{
+    width: 120px;
+    font-size: 24px;
+    padding: 2%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.DashboardButton:active{
+    filter: brightness(0.8);
+}
