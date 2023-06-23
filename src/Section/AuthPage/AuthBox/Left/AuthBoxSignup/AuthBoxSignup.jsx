@@ -15,7 +15,7 @@ const AuthBoxSignup = () => {
 
     const handleSignup = async() => {
         try {
-            const response = await axios.post(`http://localhost:5000/register`, {
+            const response = await axios.post(`${import.meta.env.VITE_LOCAL_API}/register`, {
                 name,
                 email,
                 password,

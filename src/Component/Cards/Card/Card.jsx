@@ -19,7 +19,7 @@ const Card = ({borderRad, bgColor, email, pdfId}) => {
     useEffect(() => {
         const fetchPdfs = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/pdf/${pdfId}`);
+                const response = await axios.get(`${import.meta.env.VITE_LOCAL_API}/pdf/${pdfId}`);
                 if (response.status === 200) {
                 setPdfs(response.data);
             } else {
@@ -43,6 +43,10 @@ const Card = ({borderRad, bgColor, email, pdfId}) => {
         setLongWidth(!longWidth);
     }
 
+    const handlePdfOpen = () => {
+        window.open(`${import.meta.env.VITE_LOCAL_PDF_PATH}/${pdfs?.pdf?.filePath}`, '_blank');
+    }
+
     return(
         <div class="Card" 
                 style={{borderRadius: borderRad, 
@@ -55,7 +59,7 @@ const Card = ({borderRad, bgColor, email, pdfId}) => {
                 height: longHeigth ? "45%" : "90%",
                 width: longWidth ? "45%" : "90%"}}>
 
-                <div class="CardPreview">
+                <div class="CardPreview" onClick={handlePdfOpen}>
                     <div class="CardImg"></div>
                     <span class="CardTitle">{pdfs?.pdf?.filename}</span>
                 </div>

@@ -26,6 +26,7 @@
 .CardPreview{
     height: 100%;
     width: 80%;
+    cursor: pointer;
 }
 
 .CardBtnContainer{

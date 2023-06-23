@@ -12,7 +12,7 @@ const Uploader = ({color, rad}) => {
             const formData = new FormData();
             formData.append('pdf', file);
     
-            const response = await axios.post(`http://localhost:5000/upload`, formData, {
+            const response = await axios.post(`${import.meta.env.VITE_LOCAL_API}/upload`, formData, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`,
                     'Content-Type': 'multipart/form-data',

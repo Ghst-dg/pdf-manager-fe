@@ -18,7 +18,7 @@ const CommentFeature = ({pdfId, username, comments, refresh, setRefresh}) => {
                 Authorization: `Bearer ${localStorage.getItem('token')}`,
             };
 
-            const response = await axios.post(`http://localhost:5000/pdf/comment`, data, {
+            const response = await axios.post(`${import.meta.env.VITE_LOCAL_API}/pdf/comment`, data, {
                 headers,
             });
 
