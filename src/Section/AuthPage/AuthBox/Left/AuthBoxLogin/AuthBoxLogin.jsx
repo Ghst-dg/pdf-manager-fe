@@ -15,7 +15,7 @@ const AuthBoxLogin = () => {
     const handleLogin = async() => {
         try 
         {
-            const response = await axios.post(`${import.meta.env.VITE_LOCAL_API}/login`, {
+            const response = await axios.post(`${import.meta.env.VITE_GLOBAL_API}/login`, {
                 email,
                 password,
             });

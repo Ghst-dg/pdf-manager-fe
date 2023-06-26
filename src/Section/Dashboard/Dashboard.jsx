@@ -20,7 +20,7 @@ const Dashboard = () => {
     useEffect(() => {
         const fetchUserInfo = async () => {
             try {
-                const response = await axios.get(`${import.meta.env.VITE_LOCAL_API}/user`, {
+                const response = await axios.get(`${import.meta.env.VITE_GLOBAL_API}/user`, {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('token')}`,
                     },

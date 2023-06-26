@@ -19,7 +19,7 @@ const Share = ({useremail, recievedemail, pdfId}) => {
                 Authorization: `Bearer ${localStorage.getItem('token')}`,
             };
 
-            const response = await axios.post(`${import.meta.env.VITE_LOCAL_API}/share`, data, {
+            const response = await axios.post(`${import.meta.env.VITE_GLOBAL_API}/share`, data, {
                 headers,
             });
 

@@ -15,7 +15,7 @@ const DashboardBodyContentHeader = () => {
             const formData = new FormData();
             formData.append('pdf', file);
     
-            const response = await axios.post(`${import.meta.env.VITE_LOCAL_API}/upload`, formData, {
+            const response = await axios.post(`${import.meta.env.VITE_GLOBAL_API}/upload`, formData, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`,
                     'Content-Type': 'multipart/form-data',

@@ -19,7 +19,7 @@ const Card = ({borderRad, bgColor, email, pdfId}) => {
     useEffect(() => {
         const fetchPdfs = async () => {
             try {
-                const response = await axios.get(`${import.meta.env.VITE_LOCAL_API}/pdf/${pdfId}`);
+                const response = await axios.get(`${import.meta.env.VITE_GLOBAL_API}/pdf/${pdfId}`);
                 if (response.status === 200) {
                 setPdfs(response.data);
             } else {
